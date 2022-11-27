@@ -5,7 +5,7 @@ import csv
 app = Flask(__name__)
 
 # to convert data from csv file to store into python dictionary
-with open("static/subject-resource.csv") as file: #close file automatically 
+with open("subject-resource.csv") as file: #close file automatically 
   reader = csv.reader(file)
   header = next(reader)
   subject_list = [row for row in reader]
