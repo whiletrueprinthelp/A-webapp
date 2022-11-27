@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<!-- tells user what this does --> 
+  <h1>Greetings</h1>
+  <p>This webapp allows you to be able to easily find the resources (or more specifically, the google drive/dedicated website) for the subject you want to find.</p>
+
+  <p>Disclaimer: As of now, all the subjects with the exception of gp would be referring to h2.</p>
+
+<!-- form for user to input subject they want to find resource for -->
+  <form action="/wanted-subject">
+    <input autofocus autocomplete="off"name="subject" placeholder="Enter subject" type="text">
+    <input type="submit" placeholder="Submit">
+  </form>
+
+{% endblock %}
